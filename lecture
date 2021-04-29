@@ -1,0 +1,23 @@
+모든 속성값은 proto에 들어가있다.
+proto안에 값들은 내가 다 사용할 수 있음.
+
+__proto__ : 모든객체에 존재함
+prototype
+
+prototype link => __proto__
+prototype object => prototype 
+
+js에서 function을 만들면 자동저긍로 2가지가 만들어진다:
+    1. function [name](){} : prototype
+    2. [name] prototype object : constructor & __proto__
+
+    1번의 prototype이 2번을 가르키고 있다.
+    1번이 가르키고 있는 2번 안에 contructor는 1번을 가르키고 있다.
+    이렇게 서로를 가르키면서 참조가 가능해진다.
+}
+
+console.dir()<<dir == directory : 원래 log는 log를 가르키는 거였는데 여기선
+안에 들어간 객체의 directory를 보여주라는 의미인듯    
+
+
+객체로 넣는 것은 PROTOTYPE을 그대로 넣는다는 뜻
